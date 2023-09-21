@@ -4,6 +4,8 @@
     "config:recommended",
     ":label(dependencies)",
     ":automergeMinor",
-    ":automergeRequireAllStatusChecks"
+    ":automergeRequireAllStatusChecks",
+    ":prConcurrentLimit10",
+    ":semanticCommits"
   ]
 }
