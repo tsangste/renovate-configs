@@ -47,7 +47,7 @@
       ],
       "matchUpdateTypes": ["major"],
       "groupName": "devDependencies",
-      "labels": ["breaking"]
+      "labels": ["dependencies", "breaking"]
     },
     {
       "matchPackagePatterns": ["*"],
@@ -71,7 +71,7 @@
         "@nestjs",
         "@mikro-orm"
       ],
-      "labels": ["breaking"]
+      "labels": ["dependencies", "breaking"]
     }
   ]
 }

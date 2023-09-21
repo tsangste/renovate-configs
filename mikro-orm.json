@@ -11,7 +11,7 @@
       "groupName": "mikro-orm",
       "matchPackagePrefixes": ["@mikro-orm"],
       "matchUpdateTypes": ["major"],
-      "labels": ["breaking"]
+      "labels": ["dependencies", "breaking"]
     }
   ]
 }

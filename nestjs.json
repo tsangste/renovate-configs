@@ -14,7 +14,7 @@
       "groupName": "nestjs",
       "matchPackagePrefixes": ["@nestjs"],
       "matchUpdateTypes": ["major"],
-      "labels": ["breaking"]
+      "labels": ["dependencies", "breaking"]
     }
   ]
 }
