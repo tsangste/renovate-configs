@@ -1,0 +1,20 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "local>tsangste/renovate-config:node"
+  ],
+  "packageRules": [
+    {
+      "groupName": "nestjs",
+      "matchPackagePrefixes": ["@nestjs"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "minimumReleaseAge": "3 days"
+    },
+    {
+      "groupName": "nestjs",
+      "matchPackagePrefixes": ["@nestjs"],
+      "matchUpdateTypes": ["major"],
+      "labels": ["breaking"]
+    }
+  ]
+}

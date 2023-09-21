@@ -1,0 +1,20 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "matchManagers": ["github-actions"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "all non-major actions",
+      "groupSlug": "all-minor-patch-actions",
+      "labels": ["actions"],
+      "minimumReleaseAge": "3 days"
+    },
+    {
+      "matchManagers": ["github-actions"],
+      "matchUpdateTypes": ["major"],
+      "groupName": "all major actions",
+      "groupSlug": "all-major-actions",
+      "labels": ["actions", "breaking"]
+    }
+  ]
+}

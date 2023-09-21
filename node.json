@@ -1,0 +1,77 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "group:jsTest",
+    "group:linters"
+  ],
+  "packageRules": [
+    {
+      "matchDepTypes": ["devDependencies"],
+      "matchUpdateTypes": [ "minor", "patch"],
+      "excludePackagePrefixes": [
+        "@nestjs",
+        "@mikro-orm",
+        "jest",
+        "@typescript-eslint",
+        "eslint"
+      ],
+      "excludePackageNames": [
+        "@types/jest",
+        "@types/supertest",
+        "supertest",
+        "ts-auto-mock",
+        "ts-jest",
+        "prettier",
+        "@types/eslint"
+      ],
+      "groupName": "devDependencies",
+      "minimumReleaseAge": "3 days"
+    },
+    {
+      "matchDepTypes": ["devDependencies"],
+      "excludePackagePrefixes": [
+        "@nestjs",
+        "@mikro-orm",
+        "jest",
+        "@typescript-eslint",
+        "eslint"
+      ],
+      "excludePackageNames": [
+        "@types/jest",
+        "@types/supertest",
+        "supertest",
+        "ts-auto-mock",
+        "ts-jest",
+        "prettier",
+        "@types/eslint"
+      ],
+      "matchUpdateTypes": ["major"],
+      "groupName": "devDependencies",
+      "labels": ["breaking"]
+    },
+    {
+      "matchPackagePatterns": ["*"],
+      "matchDepTypes": ["dependencies"],
+      "excludePackagePrefixes": [
+        "@nestjs",
+        "@mikro-orm"
+      ],
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "all non-major dependencies",
+      "groupSlug": "all-minor-patch-dependencies",
+      "minimumReleaseAge": "3 days"
+    },
+    {
+      "matchPackagePatterns": ["*"],
+      "matchDepTypes": ["dependencies"],
+      "groupName": "all major dependencies",
+      "groupSlug": "all-major-dependencies",
+      "matchUpdateTypes": ["major"],
+      "excludePackagePrefixes": [
+        "@nestjs",
+        "@mikro-orm"
+      ],
+      "labels": ["breaking"]
+    }
+  ]
+}

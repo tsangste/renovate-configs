@@ -1,0 +1,17 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "groupName": "mikro-orm",
+      "matchPackagePrefixes": ["@mikro-orm"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "minimumReleaseAge": "3 days"
+    },
+    {
+      "groupName": "mikro-orm",
+      "matchPackagePrefixes": ["@mikro-orm"],
+      "matchUpdateTypes": ["major"],
+      "labels": ["breaking"]
+    }
+  ]
+}
