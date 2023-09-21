@@ -6,6 +6,7 @@
     ":automergeMinor",
     ":automergeRequireAllStatusChecks",
     ":prConcurrentLimit10",
-    ":semanticCommits"
+    ":semanticCommits",
+    ":semanticCommitScopeDisabled"
   ]
 }
