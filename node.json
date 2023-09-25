@@ -2,7 +2,8 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "group:jsTest",
-    "group:linters"
+    "group:linters",
+    "local>tsangste/renovate-config:swc"
   ],
   "packageRules": [
     {
@@ -13,7 +14,8 @@
         "@mikro-orm",
         "jest",
         "@typescript-eslint",
-        "eslint"
+        "eslint",
+        "@swc"
       ],
       "excludePackageNames": [
         "@types/jest",
@@ -34,7 +36,8 @@
         "@mikro-orm",
         "jest",
         "@typescript-eslint",
-        "eslint"
+        "eslint",
+        "@swc"
       ],
       "excludePackageNames": [
         "@types/jest",
