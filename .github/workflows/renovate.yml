@@ -1,0 +1,41 @@
+name: Renovate
+on:
+  # Allows manual/automated ad-hoc trigger
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: "Override default log level"
+        required: false
+        default: "info"
+        type: string
+      overrideSchedule:
+        description: "Override all schedules"
+        required: false
+        default: "false"
+        type: string
+    # Run twice in the early morning for initial and follow up steps (create pull request and merge)
+    schedule:
+      - cron: '30 4,6 * * *'
+concurrency: renovate
+jobs:
+  renovate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Get token
+        id: get_token
+        uses: tibdex/github-app-token@v2.1.0
+        with:
+          app_id: ${{ secrets.RENOVATE_APP_ID }}
+          installation_retrieval_mode: id
+          installation_retrieval_payload: ${{ secrets.RENOVATE_INSTALL_ID }}
+          private_key: ${{ secrets.RENOVATE_PRIVATE_KEY }}
+      - name: Self-hosted Renovate
+        uses: renovatebot/github-action@v39.0.5
+        env:
+          LOG_LEVEL: ${{ inputs.logLevel || 'debug' }}
+          RENOVATE_FORCE: ${{ github.event.inputs.overrideSchedule == 'true' && '{''schedule'':null}' || '' }}
+        with:
+          configurationFile: renovate.config.js
+          token: '${{ steps.get_token.outputs.token }}'
