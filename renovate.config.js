@@ -1,7 +1,7 @@
 module.exports = {
   dryRun: null,
   platform: 'github',
-  includeForks: false,
+  forkProcessing: 'disabled',
   dependencyDashboard: true,
   onboarding: false,
   autodiscover: true,
