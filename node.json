@@ -1,11 +1,33 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "group:jsTest",
-    "group:linters",
     "local>tsangste/renovate-config:swc"
   ],
   "packageRules": [
+    {
+      "extends": "packages:jsTest",
+      "groupName": "JS test packages",
+      "matchUpdateTypes": [ "minor", "patch"],
+      "minimumReleaseAge": "3 days"
+    },
+    {
+      "extends": "packages:jsTest",
+      "groupName": "JS test packages",
+      "matchUpdateTypes": ["major"],
+      "labels": ["dependencies", "breaking"]
+    },
+    {
+      "extends": "packages:linters",
+      "groupName": "linters",
+      "matchUpdateTypes": [ "minor", "patch"],
+      "minimumReleaseAge": "3 days"
+    },
+    {
+      "extends": "packages:linters",
+      "groupName": "linters",
+      "matchUpdateTypes": ["major"],
+      "labels": ["dependencies", "breaking"]
+    },
     {
       "matchDepTypes": ["devDependencies"],
       "matchUpdateTypes": [ "minor", "patch"],
