@@ -1,0 +1,20 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "local>tsangste/renovate-config:node"
+  ],
+  "packageRules": [
+    {
+      "groupName": "serverless",
+      "matchPackagePrefixes": ["serverless"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "minimumReleaseAge": "3 days"
+    },
+    {
+      "groupName": "serverless",
+      "matchPackagePrefixes": ["serverless"],
+      "matchUpdateTypes": ["major"],
+      "labels": ["dependencies", "breaking"]
+    }
+  ]
+}

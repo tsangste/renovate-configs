@@ -15,7 +15,8 @@
         "jest",
         "@typescript-eslint",
         "eslint",
-        "@swc"
+        "@swc",
+        "serverless"
       ],
       "excludePackageNames": [
         "@types/jest",
@@ -24,7 +25,8 @@
         "ts-auto-mock",
         "ts-jest",
         "prettier",
-        "@types/eslint"
+        "@types/eslint",
+        "serverless"
       ],
       "groupName": "devDependencies",
       "minimumReleaseAge": "3 days"
@@ -37,7 +39,8 @@
         "jest",
         "@typescript-eslint",
         "eslint",
-        "@swc"
+        "@swc",
+        "serverless"
       ],
       "excludePackageNames": [
         "@types/jest",
@@ -46,7 +49,8 @@
         "ts-auto-mock",
         "ts-jest",
         "prettier",
-        "@types/eslint"
+        "@types/eslint",
+        "serverless"
       ],
       "matchUpdateTypes": ["major"],
       "groupName": "devDependencies",
