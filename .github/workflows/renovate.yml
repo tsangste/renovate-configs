@@ -6,7 +6,7 @@ on:
       logLevel:
         description: "Override default log level"
         required: false
-        default: "info"
+        default: "debug"
         type: string
       overrideSchedule:
         description: "Override all schedules"
