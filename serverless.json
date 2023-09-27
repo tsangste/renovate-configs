@@ -7,12 +7,14 @@
     {
       "groupName": "serverless",
       "matchPackagePrefixes": ["serverless"],
+      "matchPackageNames": ["@types/serverless"],
       "matchUpdateTypes": ["minor", "patch"],
       "minimumReleaseAge": "3 days"
     },
     {
       "groupName": "serverless",
       "matchPackagePrefixes": ["serverless"],
+      "matchPackageNames": ["@types/serverless"],
       "matchUpdateTypes": ["major"],
       "labels": ["dependencies", "breaking"]
     }

@@ -26,7 +26,7 @@
         "ts-jest",
         "prettier",
         "@types/eslint",
-        "serverless"
+        "@types/serverless"
       ],
       "groupName": "devDependencies",
       "minimumReleaseAge": "3 days"
@@ -50,7 +50,7 @@
         "ts-jest",
         "prettier",
         "@types/eslint",
-        "serverless"
+        "@types/serverless"
       ],
       "matchUpdateTypes": ["major"],
       "groupName": "devDependencies",
