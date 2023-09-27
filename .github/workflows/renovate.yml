@@ -13,9 +13,9 @@ on:
         required: false
         default: "false"
         type: string
-    # Run twice (1am and 1pm)
-    schedule:
-      - cron: '0 1,13 * * *'
+  # Run twice (1am and 1pm)
+  schedule:
+    - cron: '0 1,13 * * *'
 concurrency: renovate
 jobs:
   renovate:
