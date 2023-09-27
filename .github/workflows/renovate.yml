@@ -13,9 +13,9 @@ on:
         required: false
         default: "false"
         type: string
-    # Run twice in the early morning for initial and follow up steps (create pull request and merge)
+    # Run twice (1am and 1pm)
     schedule:
-      - cron: '30 4,6 * * *'
+      - cron: '0 1,13 * * *'
 concurrency: renovate
 jobs:
   renovate:
