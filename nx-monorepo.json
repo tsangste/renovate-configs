@@ -57,7 +57,7 @@
     {
       "groupName": "nx",
       "matchManagers": ["npm"],
-      "matchPackagePatterns": ["^@nrwl/", "^@nx/", "^nx$", "^@nx-", "^@ng-easy/"],
+      "matchPackagePatterns": ["^@nrwl/", "^@nx/", "^nx$", "^@nx-"],
       "matchFileNames": ["package.json"],
       "matchUpdateTypes": ["major", "minor", "patch", "pin"],
       "postUpgradeTasks": {
