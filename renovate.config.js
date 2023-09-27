@@ -11,10 +11,12 @@ module.exports = {
   allowPostUpgradeCommandTemplating: true,
   allowedPostUpgradeCommands: [
     '^npm ci --ignore-scripts$',
+    '^npm install --ignore-scripts$',
     '^npm run prepare --if-present$',
     '^npm run format --if-present$',
     '^npx --no-install nx migrate (@[a-z0-9-~][a-z0-9-._~]*\\/)?[a-z0-9-~][a-z0-9-._~]* --from=(@[a-z0-9-~][a-z0-9-._~]*\\/)?[a-z0-9-~][a-z0-9-._~]*@\\d+\\.\\d+\\.\\d+ --to=(@[a-z0-9-~][a-z0-9-._~]*\\/)?[a-z0-9-~][a-z0-9-._~]*@\\d+\\.\\d+\\.\\d+$',
     '^\\[ -f migrations\\.json \\] && npx --no-install nx migrate --run-migrations=migrations\\.json$',
     '^rm -f migrations.json || true$',
+    '^npx --no-install nx run-many --target=lint --all --parallel --fix --skip-nx-cache$',
   ],
 }
