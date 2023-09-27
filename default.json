@@ -8,6 +8,7 @@
     ":prConcurrentLimit10",
     ":semanticCommits",
     ":semanticCommitScopeDisabled",
-    ":semanticPrefixChore"
+    ":semanticPrefixChore",
+    "mergeConfidence:all-badges"
   ]
 }
