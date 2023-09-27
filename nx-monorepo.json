@@ -67,8 +67,7 @@
           "npx --no-install nx migrate {{{depName}}} --from={{{depName}}}@{{{replace '^[^\\d]*' '' currentValue}}} --to={{{depName}}}@{{{replace '^[^\\d]*' '' newValue}}}",
           "npm install --ignore-scripts",
           "npx --no-install nx migrate --run-migrations --if-exists",
-          "rm -f migrations.json",
-          "npx --no-install nx run-many --target=lint --all --parallel --fix --skip-nx-cache"
+          "rm -f migrations.json"
         ]
       }
     }
