@@ -9,6 +9,7 @@
     ":semanticCommits",
     ":semanticCommitScopeDisabled",
     ":semanticPrefixChore",
+    "docker:disableMajor",
     "mergeConfidence:all-badges"
   ]
 }
