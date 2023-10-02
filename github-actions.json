@@ -14,7 +14,7 @@
       "matchUpdateTypes": ["major"],
       "groupName": "all major actions",
       "groupSlug": "all-major-actions",
-      "labels": ["actions", "breaking"]
+      "labels": ["actions", "major"]
     }
   ]
 }

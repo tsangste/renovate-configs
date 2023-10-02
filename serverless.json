@@ -16,7 +16,7 @@
       "matchPackagePrefixes": ["serverless"],
       "matchPackageNames": ["@types/serverless"],
       "matchUpdateTypes": ["major"],
-      "labels": ["dependencies", "breaking"]
+      "labels": ["dependencies", "major"]
     }
   ]
 }

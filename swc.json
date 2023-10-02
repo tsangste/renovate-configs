@@ -11,7 +11,7 @@
       "groupName": "swc",
       "matchPackagePrefixes": ["@swc"],
       "matchUpdateTypes": ["major"],
-      "labels": ["dependencies", "breaking"]
+      "labels": ["dependencies", "major"]
     }
   ]
 }

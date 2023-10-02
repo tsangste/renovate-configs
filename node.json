@@ -13,7 +13,7 @@
     {
       "groupName": "nodejs",
       "matchDatasources": ["docker"],
-      "matchPackageNames": ["node"],
+      "matchPackagePatterns": ["/node$"],
       "matchUpdateTypes": ["minor", "patch"]
     },
     {
@@ -26,7 +26,7 @@
       "extends": "packages:jsTest",
       "groupName": "JS test packages",
       "matchUpdateTypes": ["major"],
-      "labels": ["dependencies", "breaking"]
+      "labels": ["dependencies", "major"]
     },
     {
       "extends": "packages:linters",
@@ -38,7 +38,7 @@
       "extends": "packages:linters",
       "groupName": "linters",
       "matchUpdateTypes": ["major"],
-      "labels": ["dependencies", "breaking"]
+      "labels": ["dependencies", "major"]
     },
     {
       "matchDepTypes": ["devDependencies"],
@@ -90,7 +90,7 @@
       ],
       "matchUpdateTypes": ["major"],
       "groupName": "all major devDependencies",
-      "labels": ["dependencies", "breaking"]
+      "labels": ["dependencies", "major"]
     },
     {
       "matchPackagePatterns": ["*"],
@@ -114,7 +114,7 @@
         "@nestjs",
         "@mikro-orm"
       ],
-      "labels": ["dependencies", "breaking"]
+      "labels": ["dependencies", "major"]
     }
   ]
 }
