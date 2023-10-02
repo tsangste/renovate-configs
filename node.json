@@ -5,6 +5,18 @@
   ],
   "packageRules": [
     {
+    "groupName": "nodejs",
+    "matchDatasources": ["npm"],
+    "matchPackageNames": ["@types/node"],
+    "matchUpdateTypes": ["minor", "patch"]
+    },
+    {
+      "groupName": "nodejs",
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["node"],
+      "matchUpdateTypes": ["minor", "patch"]
+    },
+    {
       "extends": "packages:jsTest",
       "groupName": "JS test packages",
       "matchUpdateTypes": [ "minor", "patch"],
@@ -48,9 +60,10 @@
         "ts-jest",
         "prettier",
         "@types/eslint",
-        "@types/serverless"
+        "@types/serverless",
+        "@types/node"
       ],
-      "groupName": "devDependencies",
+      "groupName": "all non-major devDependencies",
       "minimumReleaseAge": "3 days"
     },
     {
@@ -72,10 +85,11 @@
         "ts-jest",
         "prettier",
         "@types/eslint",
-        "@types/serverless"
+        "@types/serverless",
+        "@types/node"
       ],
       "matchUpdateTypes": ["major"],
-      "groupName": "devDependencies",
+      "groupName": "all major devDependencies",
       "labels": ["dependencies", "breaking"]
     },
     {
