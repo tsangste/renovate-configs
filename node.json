@@ -13,8 +13,9 @@
     {
       "groupName": "nodejs",
       "matchDatasources": ["docker"],
-      "matchPackagePatterns": ["/node$"],
-      "matchUpdateTypes": ["minor", "patch"]
+      "matchPackageNames": ["node"],
+      "versionCompatibility": "^(?<version>.*)(?<compatibility>-.*)?$",
+      "versioning": "node"
     },
     {
       "extends": "packages:jsTest",
@@ -25,8 +26,7 @@
     {
       "extends": "packages:jsTest",
       "groupName": "JS test packages",
-      "matchUpdateTypes": ["major"],
-      "labels": ["dependencies", "major"]
+      "matchUpdateTypes": ["major"]
     },
     {
       "extends": "packages:linters",
@@ -37,8 +37,7 @@
     {
       "extends": "packages:linters",
       "groupName": "linters",
-      "matchUpdateTypes": ["major"],
-      "labels": ["dependencies", "major"]
+      "matchUpdateTypes": ["major"]
     },
     {
       "matchDepTypes": ["devDependencies"],
@@ -89,8 +88,7 @@
         "@types/node"
       ],
       "matchUpdateTypes": ["major"],
-      "groupName": "all major devDependencies",
-      "labels": ["dependencies", "major"]
+      "groupName": "all major devDependencies"
     },
     {
       "matchPackagePatterns": ["*"],
@@ -113,8 +111,7 @@
       "excludePackagePrefixes": [
         "@nestjs",
         "@mikro-orm"
-      ],
-      "labels": ["dependencies", "major"]
+      ]
     }
   ]
 }

@@ -9,7 +9,12 @@
     ":semanticCommits",
     ":semanticCommitScopeDisabled",
     ":semanticPrefixChore",
-    "docker:disableMajor",
     "mergeConfidence:all-badges"
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["major"],
+      "addLabels": ["major"]
+    }
   ]
 }

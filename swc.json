@@ -10,8 +10,7 @@
     {
       "groupName": "swc",
       "matchPackagePrefixes": ["@swc"],
-      "matchUpdateTypes": ["major"],
-      "labels": ["dependencies", "major"]
+      "matchUpdateTypes": ["major"]
     }
   ]
 }

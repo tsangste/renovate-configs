@@ -13,8 +13,7 @@
     {
       "groupName": "nestjs",
       "matchPackagePrefixes": ["@nestjs"],
-      "matchUpdateTypes": ["major"],
-      "labels": ["dependencies", "major"]
+      "matchUpdateTypes": ["major"]
     }
   ]
 }

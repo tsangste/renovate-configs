@@ -10,8 +10,7 @@
     {
       "groupName": "mikro-orm",
       "matchPackagePrefixes": ["@mikro-orm"],
-      "matchUpdateTypes": ["major"],
-      "labels": ["dependencies", "major"]
+      "matchUpdateTypes": ["major"]
     }
   ]
 }
