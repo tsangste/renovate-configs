@@ -5,10 +5,10 @@
   ],
   "packageRules": [
     {
-    "groupName": "nodejs",
-    "matchDatasources": ["npm"],
-    "matchPackageNames": ["@types/node"],
-    "matchUpdateTypes": ["minor", "patch"]
+      "groupName": "nodejs",
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@types/node"],
+      "versioning": "node"
     },
     {
       "groupName": "nodejs",
