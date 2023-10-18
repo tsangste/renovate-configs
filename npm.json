@@ -1,0 +1,105 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "local>tsangste/renovate-config:node",
+    "local>tsangste/renovate-config:swc"
+  ],
+  "packageRules": [
+    {
+      "extends": "packages:jsTest",
+      "groupName": "JS test packages",
+      "matchUpdateTypes": [ "minor", "patch"],
+      "minimumReleaseAge": "3 days"
+    },
+    {
+      "extends": "packages:jsTest",
+      "groupName": "JS test packages",
+      "matchUpdateTypes": ["major"]
+    },
+    {
+      "extends": "packages:linters",
+      "groupName": "linters",
+      "matchUpdateTypes": [ "minor", "patch"],
+      "minimumReleaseAge": "3 days"
+    },
+    {
+      "extends": "packages:linters",
+      "groupName": "linters",
+      "matchUpdateTypes": ["major"]
+    },
+    {
+      "matchDepTypes": ["devDependencies"],
+      "matchUpdateTypes": [ "minor", "patch"],
+      "excludePackagePrefixes": [
+        "@nestjs",
+        "@mikro-orm",
+        "jest",
+        "@typescript-eslint",
+        "eslint",
+        "@swc",
+        "serverless"
+      ],
+      "excludePackageNames": [
+        "@types/jest",
+        "@types/supertest",
+        "supertest",
+        "ts-auto-mock",
+        "ts-jest",
+        "prettier",
+        "@types/eslint",
+        "@types/serverless",
+        "@types/node"
+      ],
+      "groupName": "all non-major devDependencies",
+      "minimumReleaseAge": "3 days"
+    },
+    {
+      "matchDepTypes": ["devDependencies"],
+      "excludePackagePrefixes": [
+        "@nestjs",
+        "@mikro-orm",
+        "jest",
+        "@typescript-eslint",
+        "eslint",
+        "@swc",
+        "serverless"
+      ],
+      "excludePackageNames": [
+        "@types/jest",
+        "@types/supertest",
+        "supertest",
+        "ts-auto-mock",
+        "ts-jest",
+        "prettier",
+        "@types/eslint",
+        "@types/serverless",
+        "@types/node"
+      ],
+      "matchUpdateTypes": ["major"],
+      "groupName": "all major devDependencies"
+    },
+    {
+      "matchPackagePatterns": ["*"],
+      "matchDepTypes": ["dependencies"],
+      "excludePackagePrefixes": [
+        "@nestjs",
+        "@mikro-orm"
+      ],
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "all non-major dependencies",
+      "groupSlug": "all-minor-patch-dependencies",
+      "minimumReleaseAge": "3 days"
+    },
+    {
+      "matchPackagePatterns": ["*"],
+      "matchDepTypes": ["dependencies"],
+      "groupName": "all major dependencies",
+      "groupSlug": "all-major-dependencies",
+      "matchUpdateTypes": ["major"],
+      "excludePackagePrefixes": [
+        "@nestjs",
+        "@mikro-orm"
+      ]
+    }
+  ]
+}
