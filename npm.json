@@ -52,11 +52,11 @@
         "@types/serverless",
         "@types/node"
       ],
-      "groupName": "all non-major devDependencies",
       "minimumReleaseAge": "3 days"
     },
     {
       "matchDepTypes": ["devDependencies"],
+      "matchUpdateTypes": ["major"],
       "excludePackagePrefixes": [
         "@nestjs",
         "@mikro-orm",
@@ -76,27 +76,21 @@
         "@types/eslint",
         "@types/serverless",
         "@types/node"
-      ],
-      "matchUpdateTypes": ["major"],
-      "groupName": "all major devDependencies"
+      ]
     },
     {
       "matchPackagePatterns": ["*"],
       "matchDepTypes": ["dependencies"],
+      "matchUpdateTypes": ["minor", "patch"],
       "excludePackagePrefixes": [
         "@nestjs",
         "@mikro-orm"
       ],
-      "matchUpdateTypes": ["minor", "patch"],
-      "groupName": "all non-major dependencies",
-      "groupSlug": "all-minor-patch-dependencies",
       "minimumReleaseAge": "3 days"
     },
     {
       "matchPackagePatterns": ["*"],
       "matchDepTypes": ["dependencies"],
-      "groupName": "all major dependencies",
-      "groupSlug": "all-major-dependencies",
       "matchUpdateTypes": ["major"],
       "excludePackagePrefixes": [
         "@nestjs",
