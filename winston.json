@@ -2,14 +2,14 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
-      "groupName": "mikro-orm",
-      "matchPackagePatterns": ["^winston$"],
+      "groupName": "winston",
+      "matchPackagePatterns": ["winston", "^winston"],
       "matchUpdateTypes": ["minor", "patch"],
       "minimumReleaseAge": "3 days"
     },
     {
-      "groupName": "mikro-orm",
-      "matchPackagePatterns": ["^winston$"],
+      "groupName": "winston",
+      "matchPackagePatterns": ["winston", "^winston"],
       "matchUpdateTypes": ["major"]
     }
   ]
