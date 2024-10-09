@@ -3,13 +3,13 @@
   "packageRules": [
     {
       "groupName": "aws",
-      "matchPackagePrefixes": ["^@aws-sdk/", "^aws$"],
+      "matchPackagePatterns": ["^@aws-sdk/", "^aws$"],
       "matchUpdateTypes": ["minor", "patch"],
       "minimumReleaseAge": "3 days"
     },
     {
       "groupName": "aws",
-      "matchPackagePrefixes": ["^@aws-sdk/", "^aws$"],
+      "matchPackagePatterns": ["^@aws-sdk/", "^aws$"],
       "matchUpdateTypes": ["major"]
     }
   ]

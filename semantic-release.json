@@ -3,13 +3,13 @@
   "packageRules": [
     {
       "groupName": "semantic-release",
-      "matchPackagePrefixes": ["^@semantic-release/", "^semantic-release"],
+      "matchPackagePatterns": ["^@semantic-release/", "^semantic-release"],
       "matchUpdateTypes": ["minor", "patch"],
       "minimumReleaseAge": "3 days"
     },
     {
       "groupName": "semantic-release",
-      "matchPackagePrefixes": ["^@semantic-release/", "^semantic-release"],
+      "matchPackagePatterns": ["^@semantic-release/", "^semantic-release"],
       "matchUpdateTypes": ["major"]
     }
   ]
