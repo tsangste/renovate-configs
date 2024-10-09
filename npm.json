@@ -5,6 +5,7 @@
     "local>tsangste/renovate-config:aws",
     "local>tsangste/renovate-config:semantic-release",
     "local>tsangste/renovate-config:swc",
+    "local>tsangste/renovate-config:typescript",
     "local>tsangste/renovate-config:winston"
   ],
   "packageRules": [
