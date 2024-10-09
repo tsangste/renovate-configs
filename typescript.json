@@ -3,7 +3,7 @@
   "packageRules": [
     {
       "groupName": "typescript",
-      "matchPackagePatterns": ["^typescript", "^ts-"],
+      "matchPackagePatterns": ["^typescript", "^ts-", "^tsconfig-"],
       "excludePackageNames": [
         "ts-auto-mock",
         "ts-jest"
@@ -13,7 +13,7 @@
     },
     {
       "groupName": "typescript",
-      "matchPackagePatterns": ["^typescript", "^ts-"],
+      "matchPackagePatterns": ["^typescript", "^ts-", "^tsconfig-"],
       "excludePackageNames": [
         "ts-auto-mock",
         "ts-jest"
