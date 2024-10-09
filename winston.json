@@ -3,13 +3,13 @@
   "packageRules": [
     {
       "groupName": "winston",
-      "matchPackagePatterns": ["winston", "^winston"],
+      "matchPackagePatterns": ["winston"],
       "matchUpdateTypes": ["minor", "patch"],
       "minimumReleaseAge": "3 days"
     },
     {
       "groupName": "winston",
-      "matchPackagePatterns": ["winston", "^winston"],
+      "matchPackagePatterns": ["winston"],
       "matchUpdateTypes": ["major"]
     }
   ]
