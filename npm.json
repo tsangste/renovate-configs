@@ -2,6 +2,8 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "local>tsangste/renovate-config:node",
+    "local>tsangste/renovate-config:aws",
+    "local>tsangste/renovate-config:semantic-release",
     "local>tsangste/renovate-config:swc"
   ],
   "packageRules": [
