@@ -1,0 +1,16 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "extends": "packages:jsTest",
+      "groupName": "JS test packages",
+      "matchUpdateTypes": [ "minor", "patch"],
+      "minimumReleaseAge": "3 days"
+    },
+    {
+      "extends": "packages:jsTest",
+      "groupName": "JS test packages",
+      "matchUpdateTypes": ["major"]
+    }
+  ]
+}
