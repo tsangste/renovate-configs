@@ -5,10 +5,10 @@
     "local>tsangste/renovate-config:aws",
     "local>tsangste/renovate-configs:npm-linters",
     "local>tsangste/renovate-configs:npm-tests",
-    "local>tsangste/renovate-configs:npm-ungrouped",
     "local>tsangste/renovate-config:semantic-release",
     "local>tsangste/renovate-config:swc",
     "local>tsangste/renovate-config:typescript",
-    "local>tsangste/renovate-config:winston"
+    "local>tsangste/renovate-config:winston",
+    "local>tsangste/renovate-configs:npm-ungrouped"
   ]
 }
