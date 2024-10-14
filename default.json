@@ -9,7 +9,6 @@
     ":semanticCommits",
     ":semanticCommitScopeDisabled",
     ":semanticPrefixChore",
-    ":enableVulnerabilityAlerts",
     "mergeConfidence:all-badges"
   ],
   "packageRules": [
@@ -17,5 +16,11 @@
       "matchUpdateTypes": ["major"],
       "addLabels": ["major"]
     }
-  ]
+  ],
+  "timezone": "Europe/London",
+  "vulnerabilityAlerts": {
+    "enabled": true,
+    "labels": ["security"],
+    "schedule": "at any time"
+  }
 }
