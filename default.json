@@ -6,21 +6,20 @@
     ":automergeMinor",
     ":automergeRequireAllStatusChecks",
     ":prConcurrentLimit10",
+    ":pinVersions",
     ":semanticCommits",
     ":semanticCommitScopeDisabled",
     ":semanticPrefixChore",
     "mergeConfidence:all-badges"
   ],
+  "lockFileMaintenance": {
+    "enabled": true
+  },
   "packageRules": [
     {
       "matchUpdateTypes": ["major"],
       "addLabels": ["major"]
     }
   ],
-  "timezone": "Europe/London",
-  "vulnerabilityAlerts": {
-    "enabled": true,
-    "labels": ["security"],
-    "schedule": "at any time"
-  }
+  "timezone": "Europe/London"
 }
