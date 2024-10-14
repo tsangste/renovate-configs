@@ -9,6 +9,7 @@
     ":semanticCommits",
     ":semanticCommitScopeDisabled",
     ":semanticPrefixChore",
+    ":enableVulnerabilityAlerts",
     "mergeConfidence:all-badges"
   ],
   "packageRules": [
