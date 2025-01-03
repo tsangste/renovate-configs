@@ -15,7 +15,7 @@ jobs:
       - name: 'Checkout'
         uses: actions/checkout@v4
       - name: 'Yaml lint'
-        uses: karancode/yamllint-github-action@v2.1.1
+        uses: karancode/yamllint-github-action@v3.0.0
         with:
           yamllint_file_or_dir: .github
           yamllint_strict: false
