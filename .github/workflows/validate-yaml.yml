@@ -7,7 +7,7 @@ on:
     branches:
       - main
 
-concurrency: renovate
+concurrency: validate-yaml
 jobs:
   validate:
     runs-on: ubuntu-latest
