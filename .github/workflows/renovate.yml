@@ -1,4 +1,4 @@
-name: Renovate
+name: renovate
 on:
   # Allows manual/automated ad-hoc trigger
   workflow_dispatch:
