@@ -17,7 +17,7 @@
     {
       "groupName": "nodejs",
       "matchDatasources": ["node-version"],
-      "fileMatch": [".*\\.nvmrc"],
+      "fileMatch": ["(^|/)\\.nvmrc$"],
       "versioning": "node"
     }
   ]
