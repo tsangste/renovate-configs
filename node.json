@@ -16,7 +16,7 @@
     },
     {
       "groupName": "nodejs",
-      "matchDatasources": ["nvm"],
+      "matchDatasources": ["node-version"],
       "fileMatch": [".*\\.nvmrc"],
       "versioning": "node"
     }
