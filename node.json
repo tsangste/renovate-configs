@@ -1,8 +1,5 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "local>tsangste/renovate-config:swc"
-  ],
   "packageRules": [
     {
       "groupName": "nodejs",
@@ -15,6 +12,12 @@
       "matchDatasources": ["docker"],
       "matchPackageNames": ["node"],
       "versionCompatibility": "^(?<version>[^-]+)(?<compatibility>-.*)?$",
+      "versioning": "node"
+    },
+    {
+      "groupName": "nodejs",
+      "matchDatasources": ["nvm"],
+      "fileMatch": [".*\\.nvmrc"],
       "versioning": "node"
     }
   ]
