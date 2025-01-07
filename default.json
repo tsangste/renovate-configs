@@ -10,7 +10,7 @@
     ":pinDevDependencies",
     ":semanticCommits",
     ":semanticCommitScopeDisabled",
-    ":semanticPrefixChore",
+    ":semanticCommitTypeAll(chore)",
     "mergeConfidence:all-badges"
   ],
   "lockFileMaintenance": {
